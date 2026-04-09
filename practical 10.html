@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Frames Demo - Maps & External Pages</title>
+    <style>
+        /* Optional CSS for better appearance */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<!-- Frameset replaces body content -->
+<frameset cols="30%,70%" border="2" frameborder="1" framespacing="5">
+    
+    <!-- Left Frame - Navigation/Menu -->
+    <frame src="menu.html" name="menuFrame" 
+           scrolling="auto" 
+           noresize 
+           marginwidth="5" 
+           marginheight="5">
+    
+    <!-- Right Frame - Main Content Area -->
+    <frame src="main.html" name="mainFrame" 
+           scrolling="auto" 
+           marginwidth="10" 
+           marginheight="10">
+    
+</frameset>
+
+<!-- Fallback content for browsers that don't support frames -->
+<noframes>
+    <body>
+        <h1>Frames Demo</h1>
+        <p>Your browser does not support HTML frames. Please use a modern browser.</p>
+    </body>
+</noframes>
+
+</html>
